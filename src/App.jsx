@@ -55,7 +55,7 @@ function App() {
             })}
           </List>
         </Grid>
-        <Divider sx={{'fontWeight':'bolder','color':'darkcyan','mt':3}} textAlign="left">ارائه دهنده </Divider>
+        <Divider sx={{'fontWeight':'bolder','color':'darkcyan','mt':3}} textAlign="left">ارائه دهنده &nbsp;</Divider>
         <Typography sx={{'textAlign':'center','mt':3,'color':'darkcyan'}} variant="h6">مهدی رائف</Typography>
         <Grid item sx={{'mx':'auto','justifyContent':'center','textAlign':'center'}}>
           <Button onClick={()=>{
