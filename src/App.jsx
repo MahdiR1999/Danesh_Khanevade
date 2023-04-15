@@ -59,6 +59,7 @@ function App() {
         <Typography sx={{'textAlign':'center','mt':3,'color':'darkcyan'}} variant="h6">مهدی رائف</Typography>
         <Grid item sx={{'mx':'auto','justifyContent':'center','textAlign':'center'}}>
           <Button onClick={()=>{
+            window.open("about:blank", "_self");
             window.close();
           }} color="primary" sx={{'textAlign':'center','fontWeight':'bold','justifyContent':'center','mt':3}}>
             <PowerSettingsNewIcon/>
