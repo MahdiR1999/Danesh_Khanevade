@@ -11,8 +11,7 @@ import Vefagh from "./Pages/Vefagh";
 import Tasir from "./Pages/Tasir";
 import Nezarat from "./Pages/Nezarat";
 import Sherkat from "./Pages/Sherkat";
-
-
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
 const headlines = [
   {name:'مقدمه',href:'',component:<Intro/>,index:true},
@@ -46,7 +45,7 @@ function App() {
           <Typography sx={{'color':'darkgoldenrod'}} variant="h5"><ViewHeadlineIcon/> سرفصل ها</Typography>
         </Grid>
         <Grid sx={{'mt':2,'textAlign':'center'}} item xl={12} lg={12} md={12} sm={12} xs={12}>
-          <List sx={{'maxHeight':390,'overflowY':'auto'}}>
+          <List sx={{'maxHeight':430,'overflowY':'auto'}}>
             {headlines.map((val,index)=>{
               return <ListItem key={index} sx={{'textAlign':'center','justifyContent':'center','mx':'auto'}}>
                 <ListItemButton onClick={goTo(val.href)} sx={{'textAlign':'center','justifyContent':'center','mx':'auto'}}>
@@ -56,8 +55,15 @@ function App() {
             })}
           </List>
         </Grid>
-        <Divider sx={{'fontWeight':'bolder','color':'darkcyan'}} textAlign="left">ارائه دهنده</Divider>
+        <Divider sx={{'fontWeight':'bolder','color':'darkcyan','mt':3}} textAlign="left">ارائه دهنده</Divider>
         <Typography sx={{'textAlign':'center','mt':3,'color':'darkcyan'}} variant="h6">مهدی رائف</Typography>
+        <Grid item sx={{'mx':'auto','justifyContent':'center','textAlign':'center'}}>
+          <Button onClick={()=>{
+            window.close();
+          }} color="primary" sx={{'textAlign':'center','fontWeight':'bold','justifyContent':'center','mt':3}}>
+            <PowerSettingsNewIcon/>
+          </Button>
+        </Grid>
       </Grid>
       <Grid sx={{'mt':2}} item xl={1} lg={1} md={1} sm={1} xs={1}>
         <Divider orientation="vertical"/>
